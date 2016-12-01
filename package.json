@@ -1,0 +1,30 @@
+{
+  "name": "vue-playground",
+  "version": "1.0.0",
+  "description": "Learning area for Vue.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpedroribeiro/vue-playground.git"
+  },
+  "keywords": [
+    "vuejs",
+    "javascript"
+  ],
+  "author": "J. Pedro Ribeiro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jpedroribeiro/vue-playground/issues"
+  },
+  "homepage": "https://github.com/jpedroribeiro/vue-playground#readme",
+  "devDependencies": {
+    "css-loader": "^0.26.0",
+    "vue": "^2.1.3",
+    "vue-loader": "^10.0.2",
+    "vue-template-compiler": "^2.1.3",
+    "webpack": "^2.1.0-beta.25"
+  }
+}
