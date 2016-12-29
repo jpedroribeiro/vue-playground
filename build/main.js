@@ -61,59 +61,11 @@
 /******/ 	__webpack_require__.p = "";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 10);
+/******/ 	return __webpack_require__(__webpack_require__.s = 20);
 /******/ })
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports, __webpack_require__) {
-
-var __vue_exports__, __vue_options__
-var __vue_styles__ = {}
-
-/* styles */
-__webpack_require__(7)
-
-/* script */
-__vue_exports__ = __webpack_require__(2)
-
-/* template */
-var __vue_template__ = __webpack_require__(5)
-__vue_options__ = __vue_exports__ = __vue_exports__ || {}
-if (
-  typeof __vue_exports__.default === "object" ||
-  typeof __vue_exports__.default === "function"
-) {
-if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
-__vue_options__ = __vue_exports__ = __vue_exports__.default
-}
-if (typeof __vue_options__ === "function") {
-  __vue_options__ = __vue_options__.options
-}
-__vue_options__.__file = "/Users/jpedroribeiro/dev/vue-playground/src/App/index.vue"
-__vue_options__.render = __vue_template__.render
-__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
-__vue_options__._scopeId = "data-v-2b9401e3"
-
-/* hot reload */
-if (false) {(function () {
-  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
-  hotAPI.install(require("vue"), false)
-  if (!hotAPI.compatible) return
-  module.hot.accept()
-  if (!module.hot.data) {
-    hotAPI.createRecord("data-v-2b9401e3", __vue_options__)
-  } else {
-    hotAPI.reload("data-v-2b9401e3", __vue_options__)
-  }
-})()}
-if (__vue_options__.functional) {console.error("[vue-loader] index.vue: functional components are not supported and should be defined in plain js files using render functions.")}
-
-module.exports = __vue_exports__
-
-
-/***/ },
-/* 1 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5972,36 +5924,194 @@ setTimeout(function () {
 
 module.exports = Vue$2;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(8), __webpack_require__(9)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(18), __webpack_require__(19)))
+
+/***/ },
+/* 1 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
+
+const bus = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a();
+
+/* harmony default export */ exports["a"] = bus;
 
 /***/ },
 /* 2 */
 /***/ function(module, exports, __webpack_require__) {
 
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* styles */
+__webpack_require__(17)
+
+/* script */
+__vue_exports__ = __webpack_require__(3)
+
+/* template */
+var __vue_template__ = __webpack_require__(12)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+__vue_options__.__file = "/Users/jpedroribeiro/dev/vue-playground/src/App/index.vue"
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+__vue_options__._scopeId = "data-v-2b9401e3"
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-2b9401e3", __vue_options__)
+  } else {
+    hotAPI.reload("data-v-2b9401e3", __vue_options__)
+  }
+})()}
+if (__vue_options__.functional) {console.error("[vue-loader] index.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+
+module.exports = __vue_exports__
+
+
+/***/ },
+/* 3 */
+/***/ function(module, exports, __webpack_require__) {
+
 "use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__GithubInput_index_vue__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__GithubInput_index_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__GithubInput_index_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__GithubOutput_index_vue__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__GithubOutput_index_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__GithubOutput_index_vue__);
+
+
+
 /* harmony default export */ exports["default"] = {
 	name: 'App',
+	components: {
+		'github-input': __WEBPACK_IMPORTED_MODULE_0__GithubInput_index_vue___default.a, // as per W3C, use dashes for component names
+		'github-output': __WEBPACK_IMPORTED_MODULE_1__GithubOutput_index_vue___default.a
+	},
 	data() {
 		return {};
 	}
 };
 
 /***/ },
-/* 3 */
+/* 4 */
 /***/ function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(4)();
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__messageBus_js__ = __webpack_require__(1);
+
+
+/* harmony default export */ exports["default"] = {
+	name: 'GithubInput',
+	methods: {
+		onSubmit(event) {
+			if (this.username && this.username !== '') {
+				__WEBPACK_IMPORTED_MODULE_0__messageBus_js__["a" /* default */].$emit('new-username', this.username);
+			}
+		}
+	},
+	data() {
+		return {
+			username: ''
+		};
+	}
+};
+
+/***/ },
+/* 5 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__messageBus_js__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__GithubUserData_index_vue__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__GithubUserData_index_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__GithubUserData_index_vue__);
+
+
+
+
+/* harmony default export */ exports["default"] = {
+	name: 'GithubOutput',
+	created() {
+		__WEBPACK_IMPORTED_MODULE_1__messageBus_js__["a" /* default */].$on('new-username', this.onUsernameChange);
+	},
+	destroyed() {
+		__WEBPACK_IMPORTED_MODULE_1__messageBus_js__["a" /* default */].$off('new-username', this.onUsernameChange);
+	},
+	components: {
+		'github-user-data': __WEBPACK_IMPORTED_MODULE_2__GithubUserData_index_vue___default.a
+	},
+	methods: {
+		onUsernameChange(name) {
+			this.currentUsername = name;
+			this.fetchGithubData(name);
+		},
+		fetchGithubData(name) {
+			// don't request if we got the data already
+			if (this.githubData.hasOwnProperty(name)) return;
+
+			const url = `https://api.github.com/users/${ name }`;
+			fetch(url).then(r => r.json()).then(data => {
+				__WEBPACK_IMPORTED_MODULE_0_vue___default.a.set(this.githubData, name, data);
+			});
+		}
+	},
+	data() {
+		return {
+			currentUsername: null,
+			githubData: {
+				//i.e. jpedroribeiro: {...}
+			}
+		};
+	}
+};
+
+/***/ },
+/* 6 */
+/***/ function(module, exports, __webpack_require__) {
+
+"use strict";
+/* harmony default export */ exports["default"] = {
+	name: 'GithubUserData',
+	props: ['data'],
+	data() {
+		return {};
+	}
+};
+
+/***/ },
+/* 7 */
+/***/ function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(8)();
 // imports
 
 
 // module
-exports.push([module.i, "\np[data-v-2b9401e3] {\n\tcolor: darkgreen\n}", ""]);
+exports.push([module.i, "\np[data-v-2b9401e3] {\n\tfont-family: sans-serif;\n\tcolor: darkgreen\n}", ""]);
 
 // exports
 
 
 /***/ },
-/* 4 */
+/* 8 */
 /***/ function(module, exports) {
 
 /*
@@ -6057,11 +6167,143 @@ module.exports = function() {
 
 
 /***/ },
-/* 5 */
+/* 9 */
+/***/ function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* script */
+__vue_exports__ = __webpack_require__(4)
+
+/* template */
+var __vue_template__ = __webpack_require__(15)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+__vue_options__.__file = "/Users/jpedroribeiro/dev/vue-playground/src/GithubInput/index.vue"
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-8a3a7a2e", __vue_options__)
+  } else {
+    hotAPI.reload("data-v-8a3a7a2e", __vue_options__)
+  }
+})()}
+if (__vue_options__.functional) {console.error("[vue-loader] index.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+
+module.exports = __vue_exports__
+
+
+/***/ },
+/* 10 */
+/***/ function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* script */
+__vue_exports__ = __webpack_require__(5)
+
+/* template */
+var __vue_template__ = __webpack_require__(13)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+__vue_options__.__file = "/Users/jpedroribeiro/dev/vue-playground/src/GithubOutput/index.vue"
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-30df6a50", __vue_options__)
+  } else {
+    hotAPI.reload("data-v-30df6a50", __vue_options__)
+  }
+})()}
+if (__vue_options__.functional) {console.error("[vue-loader] index.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+
+module.exports = __vue_exports__
+
+
+/***/ },
+/* 11 */
+/***/ function(module, exports, __webpack_require__) {
+
+var __vue_exports__, __vue_options__
+var __vue_styles__ = {}
+
+/* script */
+__vue_exports__ = __webpack_require__(6)
+
+/* template */
+var __vue_template__ = __webpack_require__(14)
+__vue_options__ = __vue_exports__ = __vue_exports__ || {}
+if (
+  typeof __vue_exports__.default === "object" ||
+  typeof __vue_exports__.default === "function"
+) {
+if (Object.keys(__vue_exports__).some(function (key) { return key !== "default" && key !== "__esModule" })) {console.error("named exports are not supported in *.vue files.")}
+__vue_options__ = __vue_exports__ = __vue_exports__.default
+}
+if (typeof __vue_options__ === "function") {
+  __vue_options__ = __vue_options__.options
+}
+__vue_options__.__file = "/Users/jpedroribeiro/dev/vue-playground/src/GithubUserData/index.vue"
+__vue_options__.render = __vue_template__.render
+__vue_options__.staticRenderFns = __vue_template__.staticRenderFns
+
+/* hot reload */
+if (false) {(function () {
+  var hotAPI = require("vue-loader/node_modules/vue-hot-reload-api")
+  hotAPI.install(require("vue"), false)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-3cfb6828", __vue_options__)
+  } else {
+    hotAPI.reload("data-v-3cfb6828", __vue_options__)
+  }
+})()}
+if (__vue_options__.functional) {console.error("[vue-loader] index.vue: functional components are not supported and should be defined in plain js files using render functions.")}
+
+module.exports = __vue_exports__
+
+
+/***/ },
+/* 12 */
 /***/ function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;
-  return _h('p', ["Hello World"])
+  return _h('div', [_h('p', ["Hello World"]), " ", _h('github-input'), " ", _h('github-output')])
 },staticRenderFns: []}
 module.exports.render._withStripped = true
 if (false) {
@@ -6072,7 +6314,87 @@ if (false) {
 }
 
 /***/ },
-/* 6 */
+/* 13 */
+/***/ function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;
+  return _h('div', [(_vm.currentUsername == null) ? _h('p', ["Enter a username above to see their Github data"]) : _h('p', ["Below are the results for " + _vm._s(_vm.currentUsername)]), " ", " ", " ", _h('github-user-data', {
+    attrs: {
+      "data": _vm.githubData[_vm.currentUsername]
+    }
+  })])
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-30df6a50", module.exports)
+  }
+}
+
+/***/ },
+/* 14 */
+/***/ function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;
+  return (_vm.data) ? _h('div', [_h('h4', [_vm._s(_vm.data.name)]), " ", _h('p', [_vm._s(_vm.data.company)]), " ", _h('p', [_vm._s(_vm.data.public_repos) + " repos"])]) : _vm._e()
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-3cfb6828", module.exports)
+  }
+}
+
+/***/ },
+/* 15 */
+/***/ function(module, exports, __webpack_require__) {
+
+module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;
+  return _h('form', {
+    on: {
+      "submit": function($event) {
+        $event.preventDefault();
+        _vm.onSubmit($event)
+      }
+    }
+  }, [_h('input', {
+    directives: [{
+      name: "model",
+      rawName: "v-model",
+      value: (_vm.username),
+      expression: "username"
+    }],
+    attrs: {
+      "type": "text",
+      "placeholder": "Enter a github username here"
+    },
+    domProps: {
+      "value": _vm._s(_vm.username)
+    },
+    on: {
+      "input": function($event) {
+        if ($event.target.composing) { return; }
+        _vm.username = $event.target.value
+      }
+    }
+  }), " ", _h('button', {
+    attrs: {
+      "type": "submit"
+    }
+  }, ["Go!"])])
+},staticRenderFns: []}
+module.exports.render._withStripped = true
+if (false) {
+  module.hot.accept()
+  if (module.hot.data) {
+     require("vue-loader/node_modules/vue-hot-reload-api").rerender("data-v-8a3a7a2e", module.exports)
+  }
+}
+
+/***/ },
+/* 16 */
 /***/ function(module, exports) {
 
 /*
@@ -6294,16 +6616,16 @@ function applyToTag(styleElement, obj) {
 
 
 /***/ },
-/* 7 */
+/* 17 */
 /***/ function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(3);
+var content = __webpack_require__(7);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
-var update = __webpack_require__(6)(content, {});
+var update = __webpack_require__(16)(content, {});
 if(content.locals) module.exports = content.locals;
 // Hot Module Replacement
 if(false) {
@@ -6320,7 +6642,7 @@ if(false) {
 }
 
 /***/ },
-/* 8 */
+/* 18 */
 /***/ function(module, exports) {
 
 var g;
@@ -6345,7 +6667,7 @@ module.exports = g;
 
 
 /***/ },
-/* 9 */
+/* 19 */
 /***/ function(module, exports) {
 
 // shim for using process in browser
@@ -6531,13 +6853,13 @@ process.umask = function() { return 0; };
 
 
 /***/ },
-/* 10 */
+/* 20 */
 /***/ function(module, exports, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(1);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__App_index_vue__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__App_index_vue__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__App_index_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__App_index_vue__);
 
 
@@ -6547,7 +6869,7 @@ const vm = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
 	components: {
 		app: __WEBPACK_IMPORTED_MODULE_1__App_index_vue___default.a
 	},
-	render: h =>h('app')
+	render: h =>h('app') // Render into 'el' the component 'app'
 });
 
 /***/ }

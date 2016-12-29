@@ -6,5 +6,5 @@ const vm = new Vue({
 	components: {
 		app: AppComponent
 	},
-	render: h =>h('app')
+	render: h =>h('app') // Render into 'el' the component 'app'
 });

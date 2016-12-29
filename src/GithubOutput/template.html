@@ -1,0 +1,7 @@
+<div>
+	<p v-if="currentUsername == null">Enter a username above to see their Github data</p>
+	<p v-else>Below are the results for {{ currentUsername }}</p>
+
+	<!-- the ":" below tells Vue to evaluate the content before passing to the component (it is short for 'v-bind:data=""'-->
+	<github-user-data :data="githubData[currentUsername]"></github-user-data>
+</div>
